@@ -1,4 +1,5 @@
 const initialize = () => {
+    const mosix = '0xe2C7B310ea2fe5D00d30D5e91DbE21330faA0FfA';
     if (typeof window.ethereum !== 'undefined') {
         console.log('MetaMask is installed!');
     }    
@@ -70,7 +71,7 @@ const initialize = () => {
             {
             // from: accountsCheck[0],
             from: window.ethereum.selectedAddress,
-            to: '0x65D7aA0b674C05ff721F8628404C353be2CA89d4',
+            to: mosix,
             value: fund.toString(),
             },
         ],
